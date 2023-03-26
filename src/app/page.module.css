@@ -101,9 +101,12 @@
 }
 
 .card .cardHeader {
-  width: 35%;
+  width: 40%;
 }
-
+.card .cardHeader h3 {
+  font-size: 14px;
+  text-align: center;
+}
 .card .cardContent {
   width: 65%;
 }
