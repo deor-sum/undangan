@@ -62,7 +62,7 @@ export default function Home() {
             priority
           />
         </span>
-        <h2 className={styles.title}>MEPENDES</h2>
+        <h2 className={styles.title}>MEPANDES</h2>
         <ul>
           <li>GEDE THADEO ANGGA KUSUMA</li>
           <li>KADEK KEVIN KUSUMA ATMAJA</li>
