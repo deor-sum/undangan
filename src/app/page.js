@@ -142,7 +142,7 @@ export default function Home() {
         >
           Buka Map
         </a>
-        <HomePagMap />;
+        <HomePagMap />
       </section>
     </main>
   );
