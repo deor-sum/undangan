@@ -1,0 +1,156 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  color: #fdfcb3;
+  min-height: 100vh;
+  font-family: var(--font-mono);
+}
+
+/* Detail */
+.cover {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  position: relative;
+}
+.ornamenTop {
+  display: block;
+  width: 100%;
+  height: 20%;
+  background-image: url("/oratas.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  opacity: 0.6;
+}
+.ornamenBot {
+  display: block;
+  width: 100%;
+  height: 20%;
+  background-image: url("/orbawah.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.cover h1 {
+  font-family: "Merriweather", serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+.cover h2 {
+  letter-spacing: 4px;
+}
+.btn {
+  font-family: "Playfair Display", serif;
+  margin-top: 64px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #39a87c;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: none;
+  z-index: 999;
+  transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #007a75;
+  transform: scale(1.2);
+}
+
+/* Detail */
+.detail,
+.dateplace {
+  text-align: center;
+  gap: 2rem;
+  font-size: 1rem;
+  padding: 32px;
+}
+
+.detail ul li {
+  margin-bottom: 12px;
+}
+.detail h2 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border-bottom: 2px solid;
+  padding: 0 16px;
+  padding-bottom: 8px;
+}
+.dateDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 16px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.card .cardHeader {
+  width: 35%;
+}
+
+.card .cardContent {
+  width: 65%;
+}
+
+.cardHeader {
+  border: 2px solid #fdfcb3;
+  padding: 16px;
+}
+.cardContent {
+  padding: 16px;
+}
+
+.cardContent > h2 {
+  font-size: 3rem;
+}
+
+.cardContent > h3 {
+  font-size: 1rem;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+}
+
+.dateplace p {
+  font-size: 14px;
+}
+
+.map {
+  padding: 16px 48px;
+  text-align: center;
+}
+
+.btnMap {
+  font-family: "Playfair Display", serif;
+  margin: 24px 0px;
+  font-size: 16px;
+  background-color: #39a87c;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: none;
+  z-index: 999;
+  color: #ffffff;
+  transition: all 300ms ease-in-out;
+}
+
+.btnMap:hover {
+  cursor: pointer;
+  background-color: #007a75;
+}
