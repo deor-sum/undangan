@@ -1,19 +1,20 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import React from "react";
+import dynamic from "next/dynamic";
 
-const icon = new L.icon({
-  iconUrl: "/images/marker.svg",
-  iconSize: [25, 41],
-  iconAnchor: [10, 41],
-  popupAnchor: [2, -40],
-});
-
+function HomePagMap() {
+  const Map = dynamic(
+    () => import("../components/map"), // replace '@components/map' with your component's location
+    {
+      loading: () => <p>A map is loading</p>,
+      ssr: false, // This line is important. It's what prevents server-side render
+    }
+  );
+  return <Map />;
+}
 export default function Home() {
-  const position = [-8.119752, 115.125557];
   return (
     <main className={styles.main}>
       <section id="Cover" className={styles.cover}>
@@ -141,21 +142,7 @@ export default function Home() {
         >
           Buka Map
         </a>
-
-        <MapContainer
-          style={{ height: "50vh", width: "100%" }}
-          center={position}
-          zoom={14}
-          scrollWheelZoom={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2hlZWhhbiIsImEiOiJjanplM2VrMWcwMXEwM25wdXVxMzNyOHVuIn0.JTB2seU1gbbbXloPGSLogw"
-          />
-          <Marker position={position} icon={icon}>
-            <Popup>LOKASI UPACARA</Popup>
-          </Marker>
-        </MapContainer>
+        <HomePagMap />;
       </section>
     </main>
   );
