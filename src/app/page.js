@@ -110,7 +110,7 @@ export default function Home() {
               </h3>
             </div>
             <div className={styles.cardContent}>
-              <h3>12.00 - 17.00 WITA</h3>
+              <h3>12.00 - 17.00 <br></br>WITA</h3>
             </div>
           </div>
 
