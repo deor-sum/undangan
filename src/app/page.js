@@ -103,6 +103,16 @@ export default function Home() {
               <h3>April 2023</h3>
             </div>
           </div>
+          <div className={styles.card}>
+            <div className={styles.cardHeader}>
+              <h3>
+                <strong>Waktu</strong>
+              </h3>
+            </div>
+            <div className={styles.cardContent}>
+              <h3>12.00 - 17.00 WITA</h3>
+            </div>
+          </div>
 
           <div className={styles.card}>
             <div className={styles.cardHeader}>
